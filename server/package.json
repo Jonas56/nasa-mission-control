@@ -1,0 +1,32 @@
+{
+  "name": "nasa-project-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "jest --detectOpenHandles",
+    "test:watch": "jest --watch",
+    "cluster": "pm2 start src/server.js -i max"
+  },
+  "author": "",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "supertest": "^6.1.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^4.16.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.3.1",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "pm2": "^5.1.2"
+  }
+}
